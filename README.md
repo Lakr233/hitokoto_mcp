@@ -26,4 +26,4 @@ python hitokoto_mcp_server.py --port 8124
 
 ## 数据来源
 
-数据来自 `hitokoto.json` 文件，包含了大量的中文诗词、名言等内容。服务器直接调用 `hitokoto.py` 模块来获取随机内容。
+https://github.com/hitokoto-osc/sentences-bundle
