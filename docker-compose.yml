@@ -1,7 +1,6 @@
 services:
   hitokoto-mcp:
     build: .
-    entrypoint: ["python", "hitokoto_mcp_server.py", "--port", "8124"]
     ports:
       - "8124:8124"
     restart: always

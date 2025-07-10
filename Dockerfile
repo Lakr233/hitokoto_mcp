@@ -16,4 +16,4 @@ RUN chown -R appuser:appuser /app
 USER appuser
 EXPOSE 8124
 
-CMD ["python", "hitokoto_mcp_server.py", "--port", "8124"]
+CMD ["python", "hitokoto_mcp_server.py"]

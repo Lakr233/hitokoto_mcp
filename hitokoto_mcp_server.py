@@ -32,8 +32,9 @@ if __name__ == "__main__":
     load_hitokoto_items()
     
     parser = argparse.ArgumentParser(description="Run Hitokoto MCP Streamable HTTP server")
-    parser.add_argument("--port", type=int, default=8124, help="Localhost port to listen on")
+    parser.add_argument("--host", type=str, default="0.0.0.0", help="Host to bind to")
+    parser.add_argument("--port", type=int, default=8124, help="Port to listen on")
     args = parser.parse_args()
 
     # Start the server with Streamable HTTP transport
-    uvicorn.run(mcp.streamable_http_app, host="localhost", port=args.port)
+    uvicorn.run(mcp.streamable_http_app, host=args.host, port=args.port)
